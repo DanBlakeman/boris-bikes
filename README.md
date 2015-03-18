@@ -36,6 +36,14 @@ The user stories provided as a basis for this project are as below:
     So that members of the public can get usable bikes,
     I'd like garages to receive broken bikes from vans, fix them, and then pass them back to vans for distribution.
 
+    As a system maintainer,
+    So that a station can serve many members of the public,
+    I want a docking station to have a default capacity of 20 bikes.
+
+    As a system maintainer,
+    So that busy areas can be served more effectively,
+    I want to be able to specify a larger capacity where necessary.
+
 Thanks for reading,
 
 Dan
