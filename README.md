@@ -2,7 +2,7 @@
 
 This project aims to use ruby to model the london public bike rental scheme.
 
-The aim of the project is to help practice BDD, TDD, OOP and DDD.
+The aim of the project is to practice BDD, TDD, OOP and DDD best practises.
 
 Always willing to hear feedback and see way's this could be improved or learn more about best practice. If you'd like to colaborate please leave a comment, or fork and issue a pull request for review.
 
@@ -36,6 +36,6 @@ The user stories provided as a basis for this project are as below:
     So that members of the public can get usable bikes,
     I'd like garages to receive broken bikes from vans, fix them, and then pass them back to vans for distribution.
 
-    Thanks for reading,
+Thanks for reading,
 
-    Dan
+Dan
