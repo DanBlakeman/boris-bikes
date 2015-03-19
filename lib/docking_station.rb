@@ -1,8 +1,12 @@
+require_relative 'bike'
+
 class DockingStation
   DEFAULT_CAPACITY = 20
-  def initialize(capacity = DEFAULT_CAPACITY)
+  attr_writer :capacity
+
+  def initialize
     @bikes = []
-    @capacity = capacity
+    @capacity = DEFAULT_CAPACITY
   end
 
   def dock bike
@@ -25,6 +29,6 @@ class DockingStation
   end
 
   def empty?
-    bikes.reject(&:broken?).empty?
+    bikes.reject(&:broken?).length == 0
   end
 end
