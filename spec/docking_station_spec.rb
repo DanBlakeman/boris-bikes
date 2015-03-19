@@ -21,4 +21,9 @@ describe DockingStation do
     d_station = DockingStation.new(rand_num)
     expect { rand_num.times { d_station.dock double :bike } }.not_to raise_error
   end
+  it 'does not release broken bikes' do
+    broken_bike = double :bike, broken?: true
+    subject.dock broken_bike
+    expect { subject.release_bike }.to raise_error 'No Bikes Available'
+  end
 end
