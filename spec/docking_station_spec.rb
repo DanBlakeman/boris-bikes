@@ -16,4 +16,9 @@ describe DockingStation do
     DockingStation::DEFAULT_CAPACITY.times { subject.dock double :bike }
     expect { subject.dock double :bike }.to raise_error 'Station Full'
   end
+  it 'can have an arbitrary capacity' do
+    rand_num = rand(DockingStation::DEFAULT_CAPACITY..9999)
+    d_station = DockingStation.new(rand_num)
+    expect { rand_num.times { d_station.dock double :bike } }.not_to raise_error
+  end
 end
